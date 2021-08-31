@@ -24,6 +24,6 @@ Opis funkcionalnosti:
 
     - odabir oglasa 
 
-Link na prototip aplikacije: 
+Link na prototip aplikacije
 
 https://www.figma.com/file/DGPw5X3AYQYcCoWXwyZ0XD/Prona%C4%91i-ku%C4%87nu-pomo%C4%87nicu-team-library?node-id=0%3A1
