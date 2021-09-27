@@ -29,28 +29,3 @@ id="exampleInputPassword1" placeholder="tvojalozinka" />
  </div>
  </div>
 </template>
-
-<script>
-import { firebase } from "@/firebase.js";
-export default {
-  data: function () {
-    return {
-      imeiprezime: "",
-      email: "",
-      lozinka: "",
-    };
-  },
-  methods: {
-    novikorisnik: function () {
-      firebase
-        .auth()
-        .createUserWithEmailAndPassword(this.email, this.lozinka)
-        .then(function () {
-          console.log("Uspješna registracija!");
-          this.$router.replace({name: "Naslovna"});
-        });
-      console.log("Nastavak...");
-    },
-  },
-};
-</script>

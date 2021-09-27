@@ -8,6 +8,7 @@
           <button class="btn btn primary">
             <strong> Prijava</strong>
           </button></router-link>
+          <div class="divider"/>
           <router-link to="/Registracija">
           <button class="btn btn primary">
             <strong> Registracija</strong>
@@ -20,14 +21,22 @@
 </template>
 
 <style scoped>
+template {
+    background-color: aqua;
+  }
   button {
     position: center;
     width: 422px;
     height: 61px;
     left: 560px;
     top: 421px;
-    
     background-color: yellow;
+  }
+
+  .divider {
+    width: 140px;
+    height: auto;
+    display: inline-block;
   }
 
 </style>
