@@ -27,4 +27,31 @@ id="exampleInputPassword1" placeholder="tvojalozinka" />
  </div>
 </template>
 
+<script>
+    import { firebase } from "@/firebase.js";
+    export default {
+        name: "Prijava", 
+        data(){
+            return {
+                email:"",
+                lozinka:"",
+            }
+        },
+        methods: {
+            Prijava:function(){
+                console.log ("Registracija..." + this.email)
+
+                firebase.auth().signInWithEmailAndPassword(this.email, this.lozinka)
+                .then((result) => {
+                    console.log("Uspješna prijava", result);
+
+                    this.$router.replace({name: "Naslovna"});
+                })
+                .catch(function(err){
+                    console.error("Greška", err)
+                });
+            },
+        },
+    };
+</script>
 
