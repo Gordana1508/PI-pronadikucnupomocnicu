@@ -9,7 +9,15 @@
     </nav>
     <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
     <h2>Dobrodošli na aplikaciju za pronalazak kućne pomoćnice</h2>
+    <div class="text">
+        <router-link to="/Oglasi">
+        <button class="btn btn primary">
+            <strong>Pregled oglasa</strong>
+        </button>
+        </router-link>
+    </div>
 </div>
+
 </template>
 
 <script>
@@ -29,3 +37,12 @@ import { firebase } from "@/firebase.js";
         },
     };
 </script>
+
+<style scoped>
+    button {
+        position: relative;
+        background-color: yellow;
+        border-radius: 10px;
+        position: relative;
+    }
+</style>
