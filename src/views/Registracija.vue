@@ -1,6 +1,6 @@
 <template>
- <div class="about">
- <h1>Pronađi kućnu pomoćnicu</h1>
+ <div class="registracija">
+ <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
  <div class="container">
  <div class="row">
  <div class="col-sm"></div>
@@ -57,3 +57,25 @@ id="exampleInputPassword1" placeholder="tvojalozinka" />
     };
 
 </script>
+
+<style scoped>
+.registracija{
+  width: 1518px;
+  height: 750px;
+  background-color: aqua;
+  background-attachment: fixed;
+  border-radius: undefinedpx 0 0 0;
+}
+  button{
+      background-color: yellow;
+      color: black;
+      font-weight: bold;
+  }
+  h1{
+      text-align: center;
+      color: black;
+      font-family: 'Times New Roman';
+      font-size: 76px;
+  }
+ 
+</style>

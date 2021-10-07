@@ -34,6 +34,15 @@ const routes = [
     // this generates a separate chunk (abou.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "Registracija" */ '../views/Naslovna.vue')
+  },
+
+  {
+    path: '/Oglasi',
+    name: 'Oglasi',
+    // route level code-splitting
+    // this generates a separate chunk (abou.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Registracija" */ '../views/Oglasi.vue')
   }
 ]
 

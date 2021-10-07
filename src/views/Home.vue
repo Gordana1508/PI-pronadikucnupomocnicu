@@ -47,16 +47,14 @@
     background-color:yellow;
     font-size: 150%;
     margin: 5%;
+    color: black;
   }
-h1 {
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 76px;
-line-height: 112px;
-align-items: center;
-text-align: center;
-color: #000405;
- }
+
+h1{
+      text-align: center;
+      color: black;
+      font-family: 'Times New Roman';
+      font-size: 76px;
+  }
  
 </style>

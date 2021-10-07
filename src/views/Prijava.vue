@@ -1,6 +1,6 @@
 <template>
  <div class="prijava">
- <h1>Pronađi kućnu pomoćnicu</h1>
+ <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
  <div class="container">
  <div class="row">
  <div class="col-sm"></div>
@@ -62,42 +62,19 @@ id="exampleInputPassword1" placeholder="tvojalozinka" />
   background-attachment: fixed;
   border-radius: undefinedpx 0 0 0;
 }
-  button {
-    margin: 4px;
-    width: auto;
-    height: auto;
-    border-radius: 20px;
-    padding: 1% 5%;
-    background-color:yellow;
-    font-size: 150%;
-    color: black;
-    text-align: center;
-    margin: 5%;
-  }
-  .form-group {
-    margin: 150px;
-    width: 100%;
-    border-radius: 20px;
-    padding: 1% 5%;
-    background-color:yellow;
-    font-size: 150%;
-    margin: 5%;
-    color: black; 
-  }
-  .form-control {
+ button{
+     width: 370px;
+     height: 50px;
       background-color: yellow;
-      border: yellow;
-      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-size: 136%;
   }
- h1 {
-  
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 76px;
-line-height: 112px;
-align-items: center;
-text-align: center;
-color: #000405;
- }
+ 
+ h1{
+      text-align: center;
+      color: black;
+      font-family: 'Times New Roman';
+      font-size: 76px;
+  }
 </style>
