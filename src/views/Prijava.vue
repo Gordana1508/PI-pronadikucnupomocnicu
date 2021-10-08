@@ -58,7 +58,7 @@ id="exampleInputPassword1" placeholder="tvojalozinka" />
 .prijava{
   width: 1518px;
   height: 750px;
-  background-color: aqua;
+  background-color: rgba(128, 216, 236, 0.97);
   background-attachment: fixed;
   border-radius: undefinedpx 0 0 0;
 }

@@ -51,6 +51,7 @@ id="exampleInputPassword1" placeholder="tvojalozinka" />
                 firebase.auth().createUserWithEmailAndPassword(this.email, this.lozinka) 
                 .then(function() {
                     console.log ("Uspješna registracija!");
+                    this.$router.replace({name: "Prijava"});
                 });
             },
         },
@@ -62,7 +63,7 @@ id="exampleInputPassword1" placeholder="tvojalozinka" />
 .registracija{
   width: 1518px;
   height: 750px;
-  background-color: aqua;
+  background-color:rgba(128, 216, 236, 0.97);
   background-attachment: fixed;
   border-radius: undefinedpx 0 0 0;
 }
