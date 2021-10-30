@@ -11,14 +11,17 @@
     </nav>
     <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
     <h2>Dobrodošli na aplikaciju za pronalazak kućne pomoćnice</h2>
-    <div class="text">
-        <router-link to="/Oglasi">
-        <button class="btn btn primary">
-            <strong>Pregled oglasa</strong>
-        </button>
-        </router-link>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toglle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Odabir grada</button> 
+    <ul class ="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item active" href="#">Slavonski Brod</a></li>
+        <li><a class="dropdown-item" href="#">Osijek</a></li>
+        <li><a class="dropdown-item" href="#">Karlovac</a></li>
+        <li><a class="dropdown-item" href="#">Nova Gradiška</a></li>
+        <li><a class="dropdown-item" href="#">Požega</a></li>
+    </ul>
     </div>
-</div>
+     </div>
 </div>
 </div>
 
@@ -76,5 +79,9 @@ import { firebase } from "@/firebase.js";
     background-color: yellow;
     font-family: 'Times New Roman';
     font-weight: bold;
+}
+
+.dropdown {
+
 }
 </style>
