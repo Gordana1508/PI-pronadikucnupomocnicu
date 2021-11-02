@@ -1,15 +1,57 @@
 <template>
 <div class="Oglasi">
+  <div id="nav">
+    <nav class="navbar">
+        <div class="containr">
+            <p>
+                <a href="#" @click="odjava()" class="nav-link">Odjava</a>
+            </p>
+        </div>
+    </nav>
+  </div>
   <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
+
     <div class="card">
-      <div class="card-header">Servis za čišćenje Eco-clean 
-      </div>
+      <div class="card-header">Servis za čišćenje Eco-clean </div>
       <div class="card-body">
         <h5 class="card-title">Nudimo usluge čišćenja</h5>
         <p class="card-text">Nudimo usluge čišćenja BPŽ</p>
         <button class="btn btn-lg">Odaberi oglas</button>
       </div>
     </div>
+
+    <div class="divider"></div>
+
+     <div class="card">
+      <div class="card-header">Servis za čišćenje Clean d.o.o.</div>
+      <div class="card-body">
+        <h5 class="card-title">Nudimo usluge čišćenja</h5>
+        <p class="card-text">Nudimo usluge čišćenja KŽ</p>
+        <button class="btn btn-lg">Odaberi oglas</button>
+      </div>
+     </div>
+
+     <div class="divider"></div>
+
+     <div class="card">
+      <div class="card-header">Servis za čišćenje Topić-čišćenje</div>
+      <div class="card-body">
+        <h5 class="card-title">Nudimo usluge čišćenja</h5>
+        <p class="card-text">Nudimo usluge čišćenja BPŽ</p>
+        <button class="btn btn-lg">Odaberi oglas</button>
+      </div>
+     </div>
+
+     <div class="divider"></div>
+
+     <div class="card">
+      <div class="card-header">Servis za čišćenje Baka Mara</div>
+      <div class="card-body">
+        <h5 class="card-title">Nudimo usluge čišćenja</h5>
+        <p class="card-text">Nudimo usluge čišćenja KŽ</p>
+        <button class="btn btn-lg">Odaberi oglas</button>
+      </div>
+     </div>
 </div>
 </template>
 <script>
@@ -46,4 +88,14 @@ button{
    font-weight: bold;
    font-size: 105%;
 }
+.divider{
+  height: 10px; 
+}
+.nav-link{
+  background-color: yellow;
+  color: black;
+  font-family: 'Times New Roman';
+  font-weight: bold;
+}
+
 </style>
