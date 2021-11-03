@@ -10,6 +10,21 @@
     </nav>
   </div>
         <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
+    <form class="row g-3">
+  <div class="col-md-9">
+    <label for="imeiprezime" class="form-label">Ime i prezime: </label>
+    <input type="text" class="form-control" id="" placeholder="Upišite ime i prezime">
+  </div>
+  <div class="col-md-9">
+    <label for="adresa" class="form-label">Adresa: </label>
+    <input type="text" class="form-control" id="" placeholder="Upišite Vašu adresu">
+  </div>
+  <div class="col-md-9">
+    <label for="vrijeme" class="form-label">Vrijeme dolaska: </label>
+    <input type="text" class="form-control" id="" placeholder="Upišite željeno vrijeme">
+  </div>
+</form>
+
     </div>
 </template>
 
