@@ -1,15 +1,15 @@
 <template>
   <div class="home">
     <div>
-      <img src="" class="img-fluid">
+      <img src="@/assets/slika2.jpg" class="img-fluid">
       <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
       <div>
-        <div class="text">
+        <div class="button">
           <router-link to="/Prijava">
           <button class="btn btn primary">
             <strong> Prijava</strong>
           </button></router-link>
-          <div class="divider"/>
+          <div class="divider"></div>
           <router-link to="/Registracija">
           <button class="btn btn primary">
             <strong> Registracija</strong>
@@ -17,6 +17,7 @@
         </div>
         </div>
       </div>
+    <h2>PRONAĐI KUĆNU POMOĆNICU 2021./2022.</h2>
   </div>
   
 </template>
@@ -28,16 +29,14 @@
 
 <style scoped>
 .home {
-  width: 1518px;
-  height: 750px;
+  width: fit-content;
+  height: fit-content;
   background-color:rgba(128, 216, 236, 0.97);;
   background-attachment: fixed;
   border-radius: undefinedpx 0 0 0;
 }
 .divider {
-  width: 140px;
-  height: auto;
-  display:-moz-inline-grid; 
+  width: 70px;
 }
 
   button {
@@ -57,5 +56,12 @@ h1{
       font-family: 'Times New Roman';
       font-size: 76px;
   }
+
+h2{
+  text-align: centar;
+  color: black;
+  font-family: 'Times new roman';
+  font-size: 13px;
+}
  
 </style>

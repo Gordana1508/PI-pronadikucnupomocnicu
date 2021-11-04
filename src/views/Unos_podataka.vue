@@ -9,6 +9,7 @@
         </div>
     </nav>
   </div>
+   <img src="@/assets/slika2.jpg" class="img-fluid">
         <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
     <form class="row g-3">
   <div class="col-md-9">
@@ -48,5 +49,11 @@ h1 {
     color: black;
     font-family: 'Times New Roman';
     font-size: 76px;
+}
+.nav-link{
+  color:black;
+  background-color: yellow;
+  font-family: 'Times New Roman';
+  font-weight: bold;
 }
 </style>

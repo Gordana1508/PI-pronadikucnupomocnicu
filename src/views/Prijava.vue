@@ -1,5 +1,6 @@
 <template>
  <div class="prijava">
+ <img src="@/assets/slika2.jpg" class="img-fluid">
  <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
  <div class="container">
  <div class="row">
@@ -30,7 +31,7 @@ id="exampleInputPassword1" placeholder="tvojalozinka" />
 <script>
     import { firebase } from "@/firebase.js";
     export default {
-        name: "Prijava", 
+        name: "prijava", 
         data(){
             return {
                 email:"",

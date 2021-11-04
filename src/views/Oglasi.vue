@@ -9,6 +9,7 @@
         </div>
     </nav>
   </div>
+  <img src="@/assets/slika2.jpg" class="img-fluid">
   <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
 
     <div class="card">

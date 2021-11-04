@@ -9,6 +9,7 @@
             </p>
         </div>
     </nav>
+    <img src="@/assets/slika1.jpg" class="img-fluid">
     <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
     <h2>Dobrodošli na aplikaciju za pronalazak kućne pomoćnice</h2>
     <div class="dropdown">
