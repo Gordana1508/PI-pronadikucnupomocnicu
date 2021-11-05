@@ -12,17 +12,17 @@
     <img src="@/assets/slika1.jpg" class="img-fluid">
     <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
     <h2>Dobrodošli na aplikaciju za pronalazak kućne pomoćnice</h2>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toglle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Odabir grada</button> 
-    <ul class ="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item active" href="#">Slavonski Brod</a></li>
-        <li><a class="dropdown-item" href="#">Osijek</a></li>
-        <li><a class="dropdown-item" href="#">Karlovac</a></li>
-        <li><a class="dropdown-item" href="#">Nova Gradiška</a></li>
-        <li><a class="dropdown-item" href="#">Požega</a></li>
-    </ul>
+    <div class="button">
+        <router-link to="/Oglasi">
+        <button class="btn btn-primary">Prikaži sve oglase</button>
+        </router-link>
     </div>
-     </div>
+    <div class="button">
+        <router-link to="/Pretraga">
+        <button class="btn btn-primary">Napredno pretraživanje</button>
+        </router-link>
+    </div>
+</div>
 </div>
 </div>
 
@@ -48,8 +48,8 @@ import { firebase } from "@/firebase.js";
 
 <style scoped>
 .Naslovna {
-    width: 1518px;
-    height: 750px;
+    width: fit-content;
+    height: fit-content;
     background-color: rgba(128, 216, 236, 0.97);
 }
      button {

@@ -55,6 +55,12 @@ const routes = [
     path:'/Potvrda',
     name: 'Potvrda',
     component: () => import ('../views/Potvrda.vue')
+  },
+
+  {
+    path: '/Pretraga',
+    name: 'Pretraga',
+    component: () => import ('../views/Pretraga.vue')
   }
 ]
 
