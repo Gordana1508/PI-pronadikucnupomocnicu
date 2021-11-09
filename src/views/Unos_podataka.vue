@@ -25,6 +25,7 @@
     <input type="text" class="form-control" id="" placeholder="Upišite željeno vrijeme">
   </div>
 </form>
+<div class="divider"></div>
  <div class="button">
    <router-link to="/Potvrda">
    <button class="btn btn-primary">Naruči kućnu pomoćnicu</button>
@@ -60,4 +61,18 @@ h1 {
   font-family: 'Times New Roman';
   font-weight: bold;
 }
+
+.btn {
+  color:black;
+  background-color: yellow;
+  font-family: 'Times New Roman';
+  font-weight: bold;
+}
+.divider{
+  height: 60px;
+}
+.form-label {
+  color:black;
+}
+
 </style>

@@ -11,6 +11,9 @@
         </div>
     <img src="@/assets/slika2.jpg" class="img-fluid">
     <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
+    <h2>Potvrda</h2>
+    <h3>Kućna pomoćnica dolazi na Vašu adresu u odabranom terminu!</h3>
+    </div>
     </div>
 </template>
 
