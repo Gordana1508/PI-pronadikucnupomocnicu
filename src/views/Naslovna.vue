@@ -17,6 +17,7 @@
         <button class="btn btn-primary">Prikaži sve oglase</button>
         </router-link>
     </div>
+    <div class="divider"></div>
     <div class="button">
         <router-link to="/Pretraga">
         <button class="btn btn-primary">Napredno pretraživanje</button>
@@ -80,6 +81,9 @@ import { firebase } from "@/firebase.js";
     background-color: yellow;
     font-family: 'Times New Roman';
     font-weight: bold;
+}
+.divider{
+    height: 50px;
 }
 
 .dropdown {

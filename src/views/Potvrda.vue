@@ -11,9 +11,10 @@
         </div>
     <img src="@/assets/slika2.jpg" class="img-fluid">
     <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
-    <h2>Potvrda</h2>
+     <div class="divider"></div>
     <h3>Kućna pomoćnica dolazi na Vašu adresu u odabranom terminu!</h3>
-    </div>
+    <div class="divider"></div>
+    <img src="@/assets/images.jpg" class="rounded">
     </div>
 </template>
 
@@ -42,5 +43,13 @@ h1 {
   background-color: yellow;
   font-family: 'Times New Roman';
   font-weight: bold;
+}
+h3{
+    color: black;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+.divider{
+    height: 20px;
 }
 </style>
