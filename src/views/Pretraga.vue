@@ -11,16 +11,17 @@
         </div>
         <img src="@/assets/slika1.jpg" class="img-fluid">
         <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
-    <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" id="">
-        Odaberite grad</button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item">Slavonski Brod</a></li>
-            <li><a class="dropdown-item">Osijek</a></li>
-            <li><a class="dropdown-item">Požega</a></li>
-            <li><a class="dropdown-item">Nova Gradiška</a></li>
-        </ul>
-    </div>
+        <div>
+        <select v-model="grad" class="col-md-4" aria-label="Odaberi grad">
+            <option selected>Odaberi grad</option>
+            <option value="slavonskibrod">Slavonski Brod</option>
+            <option value="osijek">Osijek</option>
+            <option value="pozega">Požega</option>
+            <option value="novagradiska">Nova Gradiška</option>
+            <option value="dakovo">Đakovo</option>
+        </select>
+        </div>
+        <img src="@/assets/slika3.jpg" class="img-fluid">
     </div>
 </template>
 
@@ -36,7 +37,7 @@ export default {
   height: fit-content;
   background-color:rgba(128, 216, 236, 0.97);;
   background-attachment: fixed;
-  border-radius: undefinedpx 0 0 0;
+
 }
 
 h1 {
@@ -59,4 +60,6 @@ h1 {
     font-family: 'Times New Roman';
     font-weight: bold;
 }
+
+
 </style>
