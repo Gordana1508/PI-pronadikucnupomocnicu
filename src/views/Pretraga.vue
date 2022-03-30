@@ -12,17 +12,32 @@
         <img src="@/assets/slika1.jpg" class="img-fluid">
         <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
         <div>
-        <select v-model="grad" class="col-md-4" aria-label="Odaberi grad">
-            <option selected>Odaberi grad</option>
+            <div class="divider"></div>
+        <h4>Odaberi grad</h4>
+        <select v-model="grad" class="col-md-4">
             <option value="slavonskibrod">Slavonski Brod</option>
             <option value="osijek">Osijek</option>
             <option value="pozega">Požega</option>
             <option value="novagradiska">Nova Gradiška</option>
             <option value="dakovo">Đakovo</option>
         </select>
+            <div class="divider"></div>
+        <h4>Odaberi dan u tjednu</h4>
+        <select v-model="dan" class="col-md-4">
+            <option value="ponedjeljak">Ponedjeljak</option>
+            <option value="utorak">Utorak</option>
+            <option value="srijeda">Srijeda</option>
+            <option value="cetvrtak">Četvrtak</option>
+            <option value="petak">Petak</option>
+            <option value="subota">Subota</option>
+        </select>
+        <div class="divider"></div>
+        <button type="button" class="btn btn-primary">Prikaži dostupne oglase</button>
+        <div class="divider"></div>
         </div>
         <img src="@/assets/slika3.jpg" class="img-fluid">
     </div>
+    
 </template>
 
 <script>
@@ -61,5 +76,26 @@ h1 {
     font-weight: bold;
 }
 
+.divider{
+    height: 25px;
+}
 
+.col-md-4{
+    background-color: yellow;
+    color:black;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+
+h4 {
+    color:black; 
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+.btn {
+    background-color: yellow;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    color:black;
+}
 </style>
