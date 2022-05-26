@@ -1,75 +1,75 @@
 <template>
 <div class="Oglasi">
-  <div id="nav">
-    <nav class="navbar">
-        <div class="containr">
-            <p>
-                <a href="#" @click="odjava()" class="nav-link">Odjava</a>
-            </p>
-        </div>
-    </nav>
-  </div>
+     <div>
+    <a href="#" @click="odjava()" class="nav-link">Odjava</a> </div> 
   <img src="@/assets/slika2.jpg" class="img-fluid">
   <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
-
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col" v-for="o in oglasi" :key="o.id">
     <div class="card">
-      <div class="card-header">Servis za čišćenje Eco-clean </div>
       <div class="card-body">
-        <h5 class="card-title">Nudimo usluge čišćenja</h5>
-        <p class="card-text">Nudimo usluge čišćenja BPŽ</p>
-        <button class="btn btn-lg">Odaberi oglas</button>
-      </div>
+        <h5 class="card-title">{{o.servis}} </h5>
+        <p class="card-text">ŽUPANIJA: {{o.zupanija}}</p>
+        <p class="card-text">GRAD: {{o.grad}}</p>
+        <p class="card-text">RADNI DANI: {{o.dan}}</p>
+        <p class="card-text">CIJENA PO SATU/HRK: {{o.cijena}}</p>
+        <p class="card-text">{{o.sadrzaj}}</p>
+        <div class="button">
+        <router-link to="/Unos_podataka">
+        <button class="btn btn-primary">Naruči oglas</button></router-link>
     </div>
-
-    <div class="divider"></div>
-
-     <div class="card">
-      <div class="card-header">Servis za čišćenje Clean d.o.o.</div>
-      <div class="card-body">
-        <h5 class="card-title">Nudimo usluge čišćenja</h5>
-        <p class="card-text">Nudimo usluge čišćenja KŽ</p>
-        <button class="btn btn-lg">Odaberi oglas</button>
-      </div>
-     </div>
-
-     <div class="divider"></div>
-
-     <div class="card">
-      <div class="card-header">Servis za čišćenje Topić-čišćenje</div>
-      <div class="card-body">
-        <h5 class="card-title">Nudimo usluge čišćenja</h5>
-        <p class="card-text">Nudimo usluge čišćenja BPŽ</p>
-        <button class="btn btn-lg">Odaberi oglas</button>
-      </div>
-     </div>
-
-     <div class="divider"></div>
-
-     <div class="card">
-      <div class="card-header">Servis za čišćenje Baka Mara</div>
-      <div class="card-body">
-        <h5 class="card-title">Nudimo usluge čišćenja</h5>
-        <p class="card-text">Nudimo usluge čišćenja KŽ</p>
-        <button class="btn btn-lg">Odaberi oglas</button>
-      </div>
-     </div>
+       </div>
+    </div>
+  </div>
+  </div>
+  <div class="divider"></div>
+  <div class="button1">
+        <router-link to="/Pretraga">
+        <button class="btn btn-primary">Pretraži oglase</button>
+        </router-link>
+    </div>
 </div>
 </template>
+
 <script>
-  export default {
-    name: "Oglasi",
-  }; 
+import { firebase } from "@/firebase.js";
+
+export default {
+  data: function () {
+    return {
+      oglasi:[]
+      }
+  },
+  methods: {
+    odjava: function () {
+        firebase
+        .auth().signOut().then(() => {
+      });
+    this.$router.replace({name: "Home"});
+    },
+    
+    dohvati: function() {
+   
+      firebase.firestore().collection('oglas').get().then(querySnapshot => {
+          const documents = querySnapshot.docs.map(doc => doc.data())
+          console.log(documents)
+          this.oglasi = documents
+        })
+    }
+  },
+  mounted(){
+    this.dohvati()
+  }
+};
 </script>
 
 <style scoped>
 .Oglasi {
-  width: 1518px;
-  height: 750px;
+  width: fit-content;
+  height: fit-content;
   background-color:rgba(128, 216, 236, 0.97);;
   background-attachment: fixed;
-  border-radius: undefinedpx 0 0 0;
 }
-
 h1{
       text-align: center;
       color: black;
@@ -98,5 +98,7 @@ button{
   font-family: 'Times New Roman';
   font-weight: bold;
 }
-
+.divider{
+    height: 50px;
+}
 </style>

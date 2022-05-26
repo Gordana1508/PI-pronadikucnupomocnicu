@@ -32,7 +32,19 @@
             <option value="subota">Subota</option>
         </select>
         <div class="divider"></div>
-        <button type="button" class="btn btn-primary">Prikaži dostupne oglase</button>
+    <div class="row align-items-center">
+        <div class="button">
+            <router-link to="/Rezultati"
+              ><button class="btn btn primary">
+                <strong>Pretraži</strong>
+              </button></router-link>
+            <router-link :to="{name: 'Rezultati', params: {grad: grad, dan: dan} }"
+              ><button class="btn btn primary">
+                <strong>Pretraži</strong>   
+              </button></router-link >
+              </div>
+        </div>
+        
         <div class="divider"></div>
         </div>
         <img src="@/assets/slika3.jpg" class="img-fluid">

@@ -1,14 +1,8 @@
 <template>
 <div class ="Naslovna">
     <div>
-<div id="nav">
-    <nav class="navbar">
-        <div class="containr">
-            <p>
-                <a href="#" @click="odjava()" class="nav-link">Odjava</a>
-            </p>
-        </div>
-    </nav>
+    <a href="#" @click="odjava()" class="nav-link">Odjava</a>
+    </div>
     <img src="@/assets/slika1.jpg" class="img-fluid">
     <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
     <h2>Dobrodošli na aplikaciju za pronalazak kućne pomoćnice</h2>
@@ -23,8 +17,6 @@
         <button class="btn btn-primary">Napredno pretraživanje</button>
         </router-link>
     </div>
-</div>
-</div>
 </div>
 
 </template>
@@ -84,9 +76,5 @@ import { firebase } from "@/firebase.js";
 }
 .divider{
     height: 50px;
-}
-
-.dropdown {
-
 }
 </style>
