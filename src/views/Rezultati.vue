@@ -65,3 +65,23 @@ odjava: function () {
   
 };
 </script>
+
+<style scoped>
+.Rezultati {
+   width: fit-content;
+   height: fit-content;
+   background-color: rgba(128, 216, 236, 0.97);
+}
+h1 {
+  color:black;
+  font-family: 'Times New Roman';
+  font-size: 76px;
+  text-align: center;
+}
+.table {
+  background-color: yellow;
+  color: black;
+  font-size: 130%;
+}
+
+</style>

@@ -3,16 +3,16 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCCjg6_dBLBZ-X0hti9OWPgCCxUvmr1iiE",
-    authDomain: "pi-pronadikucnupomocnicu-1fb5e.firebaseapp.com",
-    projectId: "pi-pronadikucnupomocnicu-1fb5e",
-    storageBucket: "pi-pronadikucnupomocnicu-1fb5e.appspot.com",
-    messagingSenderId: "151998977559",
-    appId: "1:151998977559:web:6f8a19da854c1091616e52"
-  };
+  apiKey: "AIzaSyAtWd6Mzba8EBcVj--hUD5H9Y0ajfIIWQ8",
+  authDomain: "pronadi-kucnu-pomocnicu.firebaseapp.com",
+  projectId: "pronadi-kucnu-pomocnicu",
+  storageBucket: "pronadi-kucnu-pomocnicu.appspot.com",
+  messagingSenderId: "708511985807",
+  appId: "1:708511985807:web:3b917a1d29b9211dcc00fa"
+};
   
   // Initialize Firebase 
   firebase.initializeApp(firebaseConfig);
     export {
       firebase,
-  }
+  } 
