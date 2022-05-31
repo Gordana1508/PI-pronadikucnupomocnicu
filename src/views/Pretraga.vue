@@ -1,69 +1,79 @@
 <template>
-    <div class="Pretraga">
-        <div id="nav">
-    <nav class="navbar">
-        <div class="containr">
-            <p>
-                <a href="#" @click="odjava()" class="nav-link">Odjava</a>
-            </p>
-        </div>
-    </nav>
-        </div>
-        <img src="@/assets/slika1.jpg" class="img-fluid">
-        <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
-        <div>
-            <div class="divider"></div>
-        <h4>Odaberi grad</h4>
-        <select v-model="grad" class="col-md-4">
-            <option value="slavonskibrod">Slavonski Brod</option>
-            <option value="osijek">Osijek</option>
-            <option value="pozega">Požega</option>
-            <option value="novagradiska">Nova Gradiška</option>
-            <option value="dakovo">Đakovo</option>
-        </select>
-            <div class="divider"></div>
-        <h4>Odaberi dan u tjednu</h4>
-        <select v-model="dan" class="col-md-4">
-            <option value="ponedjeljak">Ponedjeljak</option>
-            <option value="utorak">Utorak</option>
-            <option value="srijeda">Srijeda</option>
-            <option value="cetvrtak">Četvrtak</option>
-            <option value="petak">Petak</option>
-            <option value="subota">Subota</option>
-        </select>
-        <div class="divider"></div>
-    <div class="row align-items-center">
+  
+<div class="pretraga"> 
+    <div>
+      <a href="#" @click="odjava()">Odjava</a> 
+      <h1>Pretraga oglasa</h1>
+      </div>
+    
+    
+    <div style="width:50%; margin:0 auto;">   
+        <h2>Odaberi dan u tjednu</h2>
+        <select v-model="dan" class="form-control" placeholder="Odaberi dan" aria-label= "Username">
+            <option value="Ponedjeljak">Ponedjeljak</option>
+            <option value="Utorak">Utorak</option>
+            <option value="Srijeda">Srijeda</option>
+            <option value="Četvrtak">Četvrtak</option>
+            <option value="Petak">Petak</option>
+            <option value="Subota">Subota</option>
+            <option value="Nedjelja">Nedjelja</option>
+      </select>
+ <div class="divider"></div>
+      <div class= "input-group mb-3">
+        <input v-model="zupanija" type="text" class="form-control" placeholder="Upiši županiju" aria-label="Username">
+      </div>
+      <div class="input-group mb-3">
+        <input v-model="grad" type="text" class="form-control" placeholder="Upiši grad" aria-label="Username">
+    </div>
+
+          <div class="row align-items-center">
         <div class="button">
-            <router-link to="/Rezultati"
+            <router-link to="/Oglasi"
               ><button class="btn btn primary">
-                <strong>Pretraži</strong>
-              </button></router-link>
-            <router-link :to="{name: 'Rezultati', params: {grad: grad, dan: dan} }"
+                <strong>Povratak na oglase</strong>
+              </button></router-link
+            >
+            <router-link :to="{name: 'Rezultati', params: {dan: dan, zupanija: zupanija, grad: grad} }"
               ><button class="btn btn primary">
+
                 <strong>Pretraži</strong>   
-              </button></router-link >
+    
+              </button></router-link
+                >
               </div>
         </div>
-        
-        <div class="divider"></div>
-        </div>
-        <img src="@/assets/slika3.jpg" class="img-fluid">
-    </div>
-    
+    </div>  
+</div>
 </template>
 
 <script>
+import { firebase } from "@/firebase.js";
 export default {
-    name: "Pretraga", 
+  data: function () {
+      return {
+          dan:"",
+          zupanija:"",
+          grad:""
+      }
+  },
+  methods: {
+    odjava: function () {
+        firebase
+        .auth().signOut().then(() => {
+      });
+    this.$router.replace({name: "Home"});
+    },
+    
+  },
 };
 </script>
 
 <style scoped>
-.Pretraga {
-  width: fit-content;
-  height: fit-content;
+.pretraga {
   background-color:rgba(128, 216, 236, 0.97);;
   background-attachment: fixed;
+  width: 1518px;
+  height: 750px;
 
 }
 

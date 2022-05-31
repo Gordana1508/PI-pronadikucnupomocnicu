@@ -38,8 +38,8 @@
 .divider {
   width: 70px;
 }
-
-  button {
+button {
+    position: center;
     margin: 4px;
     width: 40%;
     border-radius: 20px;

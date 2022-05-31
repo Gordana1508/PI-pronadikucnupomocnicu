@@ -1,28 +1,29 @@
 <template>
 <div class="rezultati"> 
   <p><a href="#" @click="odjava()">Izlazak iz aplikacije</a></p> 
-<div>
-    <h1>Rezultati pretrage</h1>
+<div>  
+      <h1>Rezultati</h1>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">Servis: </th>
-      <th scope="col">Županija: </th>
-      <th scope="col">Grad: </th>
-      <th scope="col">Radni dani: </th>
-      <th scope="col">Cijena po satu: </th>
-      <th scope="col">Opis oglasa: </th>
+      <th scope="col">Servis</th>
+      <th scope="col">Grad</th>
+      <th scope="col">Dan</th>
+      <th scope="col">Cijena</th>
+      <th scope="col">Županija</th>
+      <th scope="col">Sadržaj oglasa</th>
       </tr>
       </thead>
         <tbody>
     <tr v-for="o in oglasi" :key="o.servis">  
       <td>{{o.servis}}</td>
-      <td>{{o.zupanija}}</td>
       <td>{{o.grad}}</td>
-      <td>{{o.radnidani}}</td>
+      <td>{{o.dan}}</td>
       <td>{{o.cijena}}</td>
-      <td>{{o.opis}}</td>
+      <td>{{o.zupanija}}</td>
+      <td>{{o.sadrzaj}}</td>
     </tr>
+   
   </tbody>
       </table>
   <div>
@@ -44,7 +45,8 @@ export default {
   methods: {
     dohvati: function() {
    
-      firebase.firestore().collection('oglas').where("grad", "==", this.$route.params.grad).where("dan","==", this.$route.params.dan).get()
+      firebase.firestore().collection('oglas').where("dan", "==", this.$route.params.dan).where("grad","==", this.$route.params.grad)
+        .get()
         .then(querySnapshot => {
           const documents = querySnapshot.docs.map(doc => doc.data())
           console.log(documents)
@@ -60,28 +62,11 @@ odjava: function () {
     },
   },
   mounted(){
-    this.dohvati() 
+    this.dohvati()
   }
   
 };
 </script>
-
 <style scoped>
-.Rezultati {
-   width: fit-content;
-   height: fit-content;
-   background-color: rgba(128, 216, 236, 0.97);
-}
-h1 {
-  color:black;
-  font-family: 'Times New Roman';
-  font-size: 76px;
-  text-align: center;
-}
-.table {
-  background-color: yellow;
-  color: black;
-  font-size: 130%;
-}
 
 </style>

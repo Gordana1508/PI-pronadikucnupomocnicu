@@ -64,7 +64,7 @@ const routes = [
   },
 
   {
-    path: '/Rezultati',
+    path: '/Rezultati/:dan/:zpanija/:grad',
     name: 'Rezultati',
     component: () => import ('../views/Rezultati.vue')
   }
