@@ -31,15 +31,14 @@
             <router-link to="/Oglasi"
               ><button class="btn btn primary">
                 <strong>Povratak na oglase</strong>
-              </button></router-link
-            >
+              </button></router-link>
+        
             <router-link :to="{name: 'Rezultati', params: {dan: dan, zupanija: zupanija, grad: grad} }"
               ><button class="btn btn primary">
 
                 <strong>Pretraži</strong>   
     
-              </button></router-link
-                >
+              </button></router-link>
               </div>
         </div>
     </div>  
@@ -85,17 +84,17 @@ h1 {
 }
 
 .nav-link {
+  color:black;
   background-color: yellow;
-  color: black;
   font-family: 'Times New Roman';
   font-weight: bold;
 }
 
-.button {
-    background-color: yellow;
-    color:black;
-    font-family: 'Times New Roman';
-    font-weight: bold;
+.btn {
+  color:black;
+  background-color: yellow;
+  font-family: 'Times New Roman';
+  font-weight: bold;
 }
 
 .divider{
@@ -109,15 +108,26 @@ h1 {
     font-weight: bold;
 }
 
-h4 {
+h2 {
     color:black; 
     font-family: 'Times New Roman';
     font-weight: bold;
+    text-align: center;
 }
 .btn {
     background-color: yellow;
     font-family: 'Times New Roman';
     font-weight: bold;
     color:black;
+    position: centar;
+    
 }
+
+.nav-link {
+    color:black; 
+    background-color: yellow;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+
 </style>

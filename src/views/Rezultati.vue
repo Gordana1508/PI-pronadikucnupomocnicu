@@ -69,4 +69,19 @@ odjava: function () {
 </script>
 <style scoped>
 
+.rezultati {
+   width: fit-content;
+  height: fit-content;
+  background-color:rgba(128, 216, 236, 0.97);;
+  background-attachment: fixed;
+  border-radius: undefinedpx 0 0 0;
+}
+
+.nav-link {
+  color:black;
+  background-color: yellow;
+  font-family: 'Times New Roman';
+  font-weight: bold;
+}
+
 </style>

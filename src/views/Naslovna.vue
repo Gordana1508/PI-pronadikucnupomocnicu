@@ -43,7 +43,7 @@ import { firebase } from "@/firebase.js";
 .Naslovna {
     width: fit-content;
     height: fit-content;
-    background-color: rgba(128, 216, 236, 0.97);
+    background-color:rgba(128, 216, 236, 0.97);
 }
      button {
      width: 390px;
@@ -69,10 +69,10 @@ import { firebase } from "@/firebase.js";
    
 }
 .nav-link {
-    color:black; 
-    background-color: yellow;
-    font-family: 'Times New Roman';
-    font-weight: bold;
+  color:black;
+  background-color: yellow;
+  font-family: 'Times New Roman';
+  font-weight: bold;
 }
 .divider{
     height: 50px;

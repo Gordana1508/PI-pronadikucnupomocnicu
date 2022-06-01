@@ -92,9 +92,9 @@ button{
 .divider{
   height: 10px; 
 }
-.nav-link{
+.nav-link {
+  color:black;
   background-color: yellow;
-  color: black;
   font-family: 'Times New Roman';
   font-weight: bold;
 }

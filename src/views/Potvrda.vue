@@ -38,7 +38,7 @@ h1 {
   font-size: 76px;
   text-align: center;
 }
-.nav-link {
+.container {
   color:black;
   background-color: yellow;
   font-family: 'Times New Roman';

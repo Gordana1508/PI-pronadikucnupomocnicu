@@ -28,10 +28,11 @@
 </script>
 
 <style scoped>
+
 .home {
   width: fit-content;
   height: fit-content;
-  background-color:rgba(128, 216, 236, 0.97);;
+  background-color:rgba(128, 216, 236, 0.97);
   background-attachment: fixed;
   border-radius: undefinedpx 0 0 0;
 }
@@ -58,7 +59,7 @@ h1{
   }
 
 h2{
-  text-align: centar;
+  text-align: center;
   color: black;
   font-family: 'Times new roman';
   font-size: 13px;
