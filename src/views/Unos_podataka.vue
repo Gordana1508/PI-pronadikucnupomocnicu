@@ -1,14 +1,6 @@
 <template>
     <div class="Unospodataka">
-        <div id="nav">
-    <nav class="navbar">
-        <div class="containr">
-            <p>
                 <a href="#" @click="odjava()" class="nav-link">Odjava</a>
-            </p>
-        </div>
-    </nav>
-  </div>
    <img src="@/assets/slika2.jpg" class="img-fluid">
         <h1>PRONAĐI KUĆNU POMOĆNICU</h1>
     <form class="row g-3">
@@ -55,13 +47,13 @@ h1 {
     font-family: 'Times New Roman';
     font-size: 76px;
 }
-.nav-link{
+.nav-link {
   color:black;
   background-color: yellow;
   font-family: 'Times New Roman';
   font-weight: bold;
+  text-align: center;
 }
-
 .btn {
   color:black;
   background-color: yellow;

@@ -40,7 +40,7 @@
   width: 70px;
 }
 button {
-    position: center;
+    align-content: center;
     margin: 4px;
     width: 40%;
     border-radius: 20px;

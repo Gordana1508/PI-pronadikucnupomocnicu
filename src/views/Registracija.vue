@@ -47,7 +47,7 @@
                 .then(function() {
                     console.log ("Uspješna registracija!");
                     alert("Uspješna registracija!")
-                    this.$router.replace({name: "/Prijava"});
+                    this.$router.replace({name: "Oglasi"});
                 });
             },
         },

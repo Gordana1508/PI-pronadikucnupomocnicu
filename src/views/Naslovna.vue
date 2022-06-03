@@ -51,6 +51,8 @@ import { firebase } from "@/firebase.js";
      background-color: yellow;
      color: black;
      font-size: 130%;
+     font-family: 'Times New Roman';
+     font-weight: bold;
     }
   h1{
       text-align: center;
@@ -63,6 +65,7 @@ import { firebase } from "@/firebase.js";
       color: black;
       font-family: 'Times New Roman';
       font-size: 42px;
+      
   }
 .navbar {
     background-color:rgba(128, 216, 236, 0.97);

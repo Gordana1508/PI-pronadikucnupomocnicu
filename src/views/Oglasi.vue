@@ -97,6 +97,7 @@ button{
   background-color: yellow;
   font-family: 'Times New Roman';
   font-weight: bold;
+  text-align: center;
 }
 .divider{
     height: 50px;

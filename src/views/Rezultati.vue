@@ -1,8 +1,8 @@
 <template>
 <div class="rezultati"> 
-  <p><a href="#" @click="odjava()">Izlazak iz aplikacije</a></p> 
+  <a href="#" @click="odjava()" class="nav-link">Odjava</a> 
 <div>  
-      <h1>Rezultati</h1>
+      <h2>Rezultati</h2>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -23,9 +23,14 @@
       <td>{{o.zupanija}}</td>
       <td>{{o.sadrzaj}}</td>
     </tr>
-   
   </tbody>
       </table>
+      <div class="button">
+          <router-link to="/Oglasi">
+          <button class="btn btn primary">
+            <strong> Povratak na oglase</strong>
+          </button></router-link>
+      </div>
   <div>
   </div>
   </div>
@@ -70,8 +75,8 @@ odjava: function () {
 <style scoped>
 
 .rezultati {
-   width: fit-content;
-  height: fit-content;
+  width: 1518px;
+  height: 750px;
   background-color:rgba(128, 216, 236, 0.97);;
   background-attachment: fixed;
   border-radius: undefinedpx 0 0 0;
@@ -82,6 +87,22 @@ odjava: function () {
   background-color: yellow;
   font-family: 'Times New Roman';
   font-weight: bold;
+  text-align: center;
 }
-
+button {
+    align-content: center;
+    background-color:yellow;
+    font-size: 100%;
+    color: black;
+    position: centar;
+  }
+h2 {
+  text-align: center;
+  color: black;
+  font-family: 'Times New Roman';
+  font-size: 76px;
+}
+.table {
+ font-family: 'Times New Roman';
+}
 </style>

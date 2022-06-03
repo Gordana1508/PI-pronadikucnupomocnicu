@@ -1,14 +1,11 @@
-<template>
-  
+<template>  
 <div class="pretraga"> 
     <div>
-      <a href="#" @click="odjava()">Odjava</a> 
+      <a href="#" @click="odjava()" class="nav-link">Odjava</a> 
       <h1>Pretraga oglasa</h1>
       </div>
-    
-    
     <div style="width:50%; margin:0 auto;">   
-        <h2>Odaberi dan u tjednu</h2>
+        <h5>Odaberi dan u tjednu</h5>
         <select v-model="dan" class="form-control" placeholder="Odaberi dan" aria-label= "Username">
             <option value="Ponedjeljak">Ponedjeljak</option>
             <option value="Utorak">Utorak</option>
@@ -30,14 +27,12 @@
         <div class="button">
             <router-link to="/Oglasi"
               ><button class="btn btn primary">
-                <strong>Povratak na oglase</strong>
+                <strong>Povratak na sve oglase</strong>
               </button></router-link>
-        
             <router-link :to="{name: 'Rezultati', params: {dan: dan, zupanija: zupanija, grad: grad} }"
-              ><button class="btn btn primary">
-
+              > <div class="divider"></div>
+              <button class="btn btn primary">
                 <strong>Pretraži</strong>   
-    
               </button></router-link>
               </div>
         </div>
@@ -82,14 +77,6 @@ h1 {
     font-size: 76px;
     text-align: center;
 }
-
-.nav-link {
-  color:black;
-  background-color: yellow;
-  font-family: 'Times New Roman';
-  font-weight: bold;
-}
-
 .btn {
   color:black;
   background-color: yellow;
@@ -108,26 +95,18 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
+h5 {
     color:black; 
     font-family: 'Times New Roman';
     font-weight: bold;
     text-align: center;
 }
-.btn {
-    background-color: yellow;
-    font-family: 'Times New Roman';
-    font-weight: bold;
-    color:black;
-    position: centar;
-    
-}
-
 .nav-link {
     color:black; 
     background-color: yellow;
     font-family: 'Times New Roman';
     font-weight: bold;
+    text-align: center;
 }
 
 </style>
