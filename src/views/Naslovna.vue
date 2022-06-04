@@ -45,37 +45,36 @@ import { firebase } from "@/firebase.js";
     height: fit-content;
     background-color:rgba(128, 216, 236, 0.97);
 }
-     button {
-     width: 390px;
-     height: 60px;
-     background-color: yellow;
-     color: black;
-     font-size: 130%;
-     font-family: 'Times New Roman';
-     font-weight: bold;
+button {
+    width: 390px;
+    height: 60px;
+    background-color: yellow;
+    color: black;
+    font-size: 130%;
+    font-family: 'Times New Roman';
+    font-weight: bold;
     }
-  h1{
-      text-align: center;
-      color: black;
-      font-family: 'Times New Roman';
-      font-size: 76px;
+h1{
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 76px;
   }
-   h2{
-      text-align: center;
-      color: black;
-      font-family: 'Times New Roman';
-      font-size: 42px;
-      
+h2{
+   text-align: center;
+   color: black;
+   font-family: 'Times New Roman';
+   font-size: 42px;  
   }
 .navbar {
-    background-color:rgba(128, 216, 236, 0.97);
-   
+  background-color:rgba(128, 216, 236, 0.97);  
 }
 .nav-link {
   color:black;
   background-color: yellow;
   font-family: 'Times New Roman';
   font-weight: bold;
+  text-align: center;
 }
 .divider{
     height: 50px;

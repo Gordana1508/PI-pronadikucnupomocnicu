@@ -64,15 +64,15 @@
   border-radius: undefinedpx 0 0 0;
 }
 button{
-      background-color: yellow;
-      color: black;
-      font-weight: bold;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
   }
 h1{
-      text-align: center;
-      color: black;
-      font-family: 'Times New Roman';
-      font-size: 76px;
+   text-align: center;
+   color: black;
+   font-family: 'Times New Roman';
+   font-size: 76px;
 }
  
 </style>

@@ -71,10 +71,10 @@ export default {
   background-attachment: fixed;
 }
 h1{
-      text-align: center;
-      color: black;
-      font-family: 'Times New Roman';
-      font-size: 76px;
+  text-align: center;
+  color: black;
+  font-family: 'Times New Roman';
+  font-size: 76px;
   }
 .card{
   background-color: rgba(91, 196, 219, 0.97);
@@ -82,12 +82,12 @@ h1{
   font-family: 'Times New Roman';
 }
 button{
-   width: 150px;
-   height: 37px;
-   background-color: yellow;
-   color: black;
-   font-weight: bold;
-   font-size: 105%;
+  width: 150px;
+  height: 37px;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  font-size: 105%;
 }
 .divider{
   height: 10px; 
@@ -100,6 +100,6 @@ button{
   text-align: center;
 }
 .divider{
-    height: 50px;
+  height: 50px;
 }
 </style>

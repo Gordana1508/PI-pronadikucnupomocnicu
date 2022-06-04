@@ -33,7 +33,7 @@
 </script>
 
 <style scoped>
-  .Unospodataka {
+.Unospodataka {
   width: 1518px;
   height: 750px;
   background-color:rgba(128, 216, 236, 0.97);;
@@ -42,10 +42,10 @@
 }
 
 h1 {
-    text-align: center;
-    color: black;
-    font-family: 'Times New Roman';
-    font-size: 76px;
+  text-align: center;
+  color: black;
+  font-family: 'Times New Roman';
+  font-size: 76px;
 }
 .nav-link {
   color:black;

@@ -63,19 +63,19 @@ id="exampleInputPassword1" placeholder="tvojalozinka" />
   background-attachment: fixed;
   border-radius: undefinedpx 0 0 0;
 }
- button{
-     width: 370px;
-     height: 50px;
-      background-color: yellow;
-      color: black;
-      font-weight: bold;
-      font-size: 136%;
+button{
+    width: 370px;
+    height: 50px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    font-size: 136%;
   }
- 
- h1{
-      text-align: center;
-      color: black;
-      font-family: 'Times New Roman';
-      font-size: 76px;
+  
+h1{
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 76px;
   }
 </style>

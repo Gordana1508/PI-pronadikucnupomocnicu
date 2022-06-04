@@ -62,20 +62,24 @@ h1 {
   text-align: center;
 }
 h3{
-    color: black;
-    font-family: 'Times New Roman';
-    font-weight: bold;
+  color: black;
+  font-family: 'Times New Roman';
+  font-weight: bold;
+  text-align: center;
 }
 .divider{
-    height: 20px;
+  height: 20px;
 }
 button {
-     width: 250px;
-     height: 60px;
-     background-color: yellow;
-     color: black;
-     font-size: 130%;
-     font-family: 'Times New Roman';
-     font-weight: bold;
+  width: 250px;
+  height: 60px;
+  background-color: yellow;
+  color: black;
+  font-size: 130%;
+  font-family: 'Times New Roman';
+  font-weight: bold;
     }
+img {
+    position: centar;
+}
 </style>

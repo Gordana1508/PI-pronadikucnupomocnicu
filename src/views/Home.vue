@@ -40,22 +40,22 @@
   width: 70px;
 }
 button {
-    align-content: center;
-    margin: 4px;
-    width: 40%;
-    border-radius: 20px;
-    padding: 1% 5%;
-    background-color:yellow;
-    font-size: 150%;
-    margin: 5%;
-    color: black;
+  align-content: center;
+  margin: 4px;
+  width: 40%;
+  border-radius: 20px;
+  padding: 1% 5%;
+  background-color:yellow;
+  font-size: 150%;
+  margin: 5%;
+  color: black;
   }
 
 h1{
-      text-align: center;
-      color: black;
-      font-family: 'Times New Roman';
-      font-size: 76px;
+  text-align: center;
+  color: black;
+  font-family: 'Times New Roman';
+  font-size: 76px;
   }
 
 h2{
