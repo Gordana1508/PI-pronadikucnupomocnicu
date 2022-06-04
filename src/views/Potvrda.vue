@@ -61,6 +61,9 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+div {
+  text-align: center;
+}
 h3{
   color: black;
   font-family: 'Times New Roman';

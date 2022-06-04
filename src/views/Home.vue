@@ -36,6 +36,9 @@
   background-attachment: fixed;
   border-radius: undefinedpx 0 0 0;
 }
+div {
+  text-align: center;
+}
 .divider {
   width: 70px;
 }

@@ -2,7 +2,7 @@
 <div class="rezultati"> 
   <a href="#" @click="odjava()" class="nav-link">Odjava</a> 
 <div>  
-      <h2>Rezultati</h2>
+      <h3>Rezultati</h3>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -72,6 +72,7 @@ odjava: function () {
   
 };
 </script>
+
 <style scoped>
 
 .rezultati {
@@ -96,7 +97,11 @@ button {
     color: black;
     position: centar;
   }
-h2 {
+
+div {
+  text-align: center;
+}
+h3 {
   text-align: center;
   color: black;
   font-family: 'Times New Roman';

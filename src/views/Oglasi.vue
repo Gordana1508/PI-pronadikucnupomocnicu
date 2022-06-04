@@ -89,6 +89,9 @@ button{
   font-weight: bold;
   font-size: 105%;
 }
+div {
+  text-align: center;
+}
 .divider{
   height: 10px; 
 }

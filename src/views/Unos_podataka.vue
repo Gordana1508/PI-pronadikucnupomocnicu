@@ -60,6 +60,9 @@ h1 {
   font-family: 'Times New Roman';
   font-weight: bold;
 }
+div {
+  text-align: center;
+}
 .divider{
   height: 60px;
 }

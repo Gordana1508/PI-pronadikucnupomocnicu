@@ -76,6 +76,9 @@ h2{
   font-weight: bold;
   text-align: center;
 }
+div {
+  text-align: center;
+}
 .divider{
     height: 50px;
 }

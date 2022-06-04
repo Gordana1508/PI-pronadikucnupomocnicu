@@ -23,21 +23,20 @@
         <input v-model="grad" type="text" class="form-control" placeholder="Upiši grad" aria-label="Username">
     </div>
 
-          <div class="row align-items-center">
-        <div class="button">
-            <router-link to="/Oglasi"
-              ><button class="btn btn primary">
-                <strong>Povratak na sve oglase</strong>
-              </button></router-link>
-            <router-link :to="{name: 'Rezultati', params: {dan: dan, zupanija: zupanija, grad: grad} }"
-              > <div class="divider"></div>
-              <button class="btn btn primary">
-                <strong>Pretraži</strong>   
-              </button></router-link>
-              </div>
+  <div class="button">
+      <router-link to="/Oglasi">
+        <button class="btn btn primary">
+          <strong>Povratak na sve oglase</strong>
+        </button></router-link>
+      <router-link :to="{name: 'Rezultati', params: {dan: dan, zupanija: zupanija, grad: grad} }">
+         <div class="divider"></div>
+            <button class="btn btn primary">
+              <strong>Pretraži</strong>   
+            </button></router-link>
+            </div>
         </div>
     </div>  
-</div>
+    
 </template>
 
 <script>
@@ -82,8 +81,11 @@ h1 {
   background-color: yellow;
   font-family: 'Times New Roman';
   font-weight: bold;
+  text-align: center
 }
-
+div {
+  text-align: center;
+}
 .divider{
     height: 25px;
 }
