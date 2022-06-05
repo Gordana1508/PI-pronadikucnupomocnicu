@@ -45,11 +45,13 @@ id="exampleInputPassword1" placeholder="tvojalozinka" />
                 firebase.auth().signInWithEmailAndPassword(this.email, this.lozinka)
                 .then((result) => {
                     console.log("Uspješna prijava", result);
+                    alert("Uspješna prijava!")
 
                     this.$router.replace({name: "Naslovna"});
                 })
                 .catch(function(err){
                     console.error("Greška", err)
+                    alert("Kriva lozinka ili email")
                 });
             },
         },
