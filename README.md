@@ -1,3 +1,6 @@
+Link na aplikaciju: https://meek-tartufo-c85d75.netlify.app/
+
+
 Naziv aplikacije: Pronađi kućnu pomoćnicu 
 
 Tim: Gordana Vukoje - gvukoje@student.unipu.hr
